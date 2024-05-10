@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DevAThon-2024</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/deva.css') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='logo-removebg-preview.png') }}" />
+  </head>
+
+  <body id="container">
+    <header id="header">
+      <div class="nav">
+        <div class="logo">
+          <img src="{{ url_for('static', filename='logo.png') }}" alt="PC Logo" />
+        </div>
+
+        <div class="title">
+          <h1>IIITG PROGRAMMING CLUB</h1>
+        </div>
+      </div>
+    </header>
+
+    <section class="login-section" id="body">
+      <div class="text">
+        <div>
+          <h1>DEV-A-THON</h1>
+          <h2>Elevate Your Web Creations in Just 72 Hours!</h2>
+          <p>
+            Participants have the liberty to choose the technology stack, design
+            approach, and implementation strategy that best suits their vision.
+          </p>
+        </div>
+
+        <div class="social-icons">
+          <div class="social-icon">
+            <a href="https://www.facebook.com/pciiitg/"><img src="{{ url_for('static', filename='ass.png') }}"></a>
+          </div>
+          <div class="social-icon">
+            <a href="https://twitter.com/IIITGhy"><img src="{{ url_for('static', filename='asss.png') }}"></a>
+          </div>
+          <div class="social-icon">
+            <a href="https://www.instagram.com/pc_iiitg/"><img src="{{ url_for('static', filename='as.png') }}"></a>
+          </div>
+          <div class="social-icon">
+            <a href="https://www.youtube.com/@programmingclubiiitg8763"><img src="{{ url_for('static', filename='oaa.png') }}"></a>
+          </div>
+          <div class="social-icon">
+            <a
+              href="https://www.linkedin.com/school/indian-institute-of-information-technology/"><img src="{{ url_for('static', filename='oa.png') }}"
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-container">
+        <div class="form-content">
+          <h2>Sign-In</h2>
+          <form class="login-form" action = "/" method="post">
+            <div class="inputbox form-input">
+              <input
+                type="email"
+                id="username"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+
+            <div class="inputbox">
+              <input
+                type="password"
+                id="password"
+                name="pw"
+                placeholder="Password"
+                minlength="8"
+                required
+              />
+            </div>
+
+            <div id="forget">
+              <a
+                href="#"
+                target="_blank"
+                style="text-decoration: none; color: white"
+                >Forgot Password?</a
+              >
+            </div>
+            <nav>
+              <ul id="button">
+                <button type="submit">
+                  Login
+                  <span></span><span></span><span></span><span></span>
+                </button>
+              </ul>
+            </nav>
+            <div class="register">
+              <p>
+                Don't have an account?
+                <a
+                  id="register"
+                  href="#"
+                  target="_blank"
+                  >Register</a
+                >
+              </p>
+            </div>
+          </form>
+          <div id="formbox"></div>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer">
+      &copy;  2024 IIITG Programming Club. All Rights Reserved. | Made By Prithvi
+      |
+    </div>
+  </body>
+</html>
